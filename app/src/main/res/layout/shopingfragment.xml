@@ -1,6 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:layout_height="250dp">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_gravity="center"
+            android:background="@mipmap/car"
+            android:layout_height="120dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:text="您的购物车还没有商品"
+            android:gravity="center"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:text="去购物"
+            android:id="@+id/bt"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+         android:background="#fff"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:text="推荐搭配"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+        <GridView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:id="@+id/gl"
+            android:numColumns="2"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
 </LinearLayout>

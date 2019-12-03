@@ -7,12 +7,12 @@
   <TextView
       android:layout_width="match_parent"
       android:text="首页"
+      android:id="@+id/tv"
       android:gravity="center"
       android:textSize="40sp"
       android:layout_height="match_parent"/>
       <LinearLayout
           android:id="@+id/ll"
-          android:visibility="gone"
           android:layout_width="match_parent"
           android:orientation="vertical"
           android:layout_height="match_parent">

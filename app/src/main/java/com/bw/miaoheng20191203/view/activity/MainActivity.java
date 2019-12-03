@@ -98,4 +98,7 @@ public class MainActivity extends BaseActivity {
     protected int layoutid() {
         return R.layout.activity_main;
     }
+    public void qie(){
+        viewPager.setCurrentItem(0);
+    }
 }
